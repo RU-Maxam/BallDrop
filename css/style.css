@@ -4,9 +4,15 @@ body{
     For entire body related tokens: sets font family, take away margin, change bckgrnd color, auto height
     */
     font-family: 'Roboto Condensed', sans-serif;
-    margin: 0;
     background: #f5f5f5;
     height: auto;
+    max-width: 1300px;
+    margin: auto; /*always stays in the middle*/
+    box-shadow: 30px 0px 40px rgba(0,0,0,0.1), 
+    -30px 0px 40px  rgba(0,0,0,0.2); /*horizontal offset vertical offset and color
+    rgba: takes in the red green bluee value and the alpha value which controls the lightness of it 0.1 will make it slightly transparent
+    then bot top left right pixels is -30 0 40 px the last rgba controls shadow density etc
+    */
 }
 .landing-image{
     /*pull unsplash for static img: to use an img off unsplash simply use:
@@ -37,6 +43,9 @@ body{
     transition: background 800ms ease; /*add transition to background where it slowly turns to that color*/
     background: #333;
 }
+.btn:hover{
+    background:#b4b4b4;
+}
 #topSection{
     text-align: center;
 }
@@ -66,6 +75,7 @@ body{
 }
 #headerRules h1{
     padding: 1.5rem;
+    
 }
 #headerTitle h1{
     text-align: center;
@@ -75,6 +85,14 @@ footer{
     padding: 1rem 1rem;
     margin: auto;
     color: #333;
+}
+#GameWindow{
+    box-shadow: 30px 0px 40px rgba(0,0,0,0.1), 
+    -30px 0px 40px  rgba(0,0,0,0.2);
+    width: 75%;
+    height: 500px;
+    margin: auto;
+    text-align: center;
 }
 
 /*from source code*/
@@ -104,7 +122,7 @@ footer{
   }
   
   .fakeMenu {
-    width:100%; 
+    width:300px; 
     margin:0 auto;
     box-sizing: border-box;
     height: 1.5625px;
@@ -115,7 +133,7 @@ footer{
   }
   
   .fakeScreen {
-    width:100%; 
+    width:300px; 
     margin:0 auto;
     padding: 20px;
     background-color: #151515;
@@ -140,159 +158,86 @@ footer{
     color: #fff;
     font-weight: bold;
   }
-  
   .line1 {
     color: #9CD9F0;
-    -webkit-animation: type .5s 1s steps(20, end) forwards;
-    -moz-animation: type .5s 1s steps(20, end) forwards;
-    -o-animation: type .5s 1s steps(20, end) forwards;
-    animation: type .5s 1s steps(20, end) forwards;
+    -webkit-animation: type .5s;
+    -moz-animation: type .5s;
+    -o-animation: type .5s;
+    animation: type .5s;
   }
-  
   .cursor1 {
-    -webkit-animation: blink 1s 2s 2 forwards;
-    -moz-animation: blink 1s 2s 2 forwards;
-    -o-animation: blink 1s 2s 2 forwards;
-    animation: blink 1s 2s 2 forwards;
+    -webkit-animation: blink 1s 2s 2;
+    -moz-animation: blink 1s 2s 2;
+    -o-animation: blink 1s 2s 2;
+    animation: blink 1s 2s 2;
   }
-  
   .line2 {
     color: #CDEE69;
-    -webkit-animation: type .5s 4.25s steps(20, end) forwards;
-    -moz-animation: type .5s 4.25s steps(20, end) forwards;
-    -o-animation: type .5s 4.25s steps(20, end) forwards;
-    animation: type .5s 4.25s steps(20, end) forwards;
+    -webkit-animation: type .5s;
+    -moz-animation: type .5s;
+    -o-animation: type .5s;
+    animation: type .5s;
   }
-  
   .cursor2 {
-    -webkit-animation: blink 1s 5.25s 2 forwards;
-    -moz-animation: blink 1s 5.25s 2 forwards;
-    -o-animation: blink 1s 5.25s 2 forwards;
-    animation: blink 1s 5.25s 2 forwards;
+    -webkit-animation: blink 1s 2s 2;
+    -moz-animation: blink 1s 2s 2;
+    -o-animation: blink 1s 2s 2;
+    animation: blink 1s 2s 2;
   }
-  
   .line3 {
     color: #E09690;
-    -webkit-animation: type .5s 7.5s steps(20, end) forwards;
-    -moz-animation: type .5s 7.5s steps(20, end) forwards;
-    -o-animation: type .5s 7.5s steps(20, end) forwards;
-    animation: type .5s 7.5s steps(20, end) forwards;
+    -webkit-animation: type .5s;
+    -moz-animation: type .5s;
+    -o-animation: type .5s;
+    animation: type .5s;
   }
-  
   .cursor3 {
-    -webkit-animation: blink 1s 8.5s 2 forwards;
-    -moz-animation: blink 1s 8.5s 2 forwards;
-    -o-animation: blink 1s 8.5s 2 forwards;
-    animation: blink 1s 8.5s 2 forwards;
+    -webkit-animation: blink 1s 2s 2;
+    -moz-animation: blink 1s 2s 2;
+    -o-animation: blink 1s 2s 2;
+    animation: blink 1s 2s 2;
   }
-  
   .line4 {
     color: #fff;
-    -webkit-animation: type .5s 10.75s steps(20, end) forwards;
-    -moz-animation: type .5s 10.75s steps(20, end) forwards;
-    -o-animation: type .5s 10.75s steps(20, end) forwards;
-    animation: type .5s 10.75s steps(20, end) forwards;
+    -webkit-animation: type .5s ;
+    -moz-animation: type .5s ;
+    -o-animation: type .5s ;
+    animation: type .5s ;
   }
-  
   .cursor4 {
-    -webkit-animation: blink 1s 11.5s infinite;
-    -moz-animation: blink 1s 8.5s infinite;
-    -o-animation: blink 1s 8.5s infinite;
-    animation: blink 1s 8.5s infinite;
+    -webkit-animation: blink 1s 2s 2;
+    -moz-animation: blink 1s 2s 2;
+    -o-animation: blink 1s 2s 2;
+    animation: blink 1s 2s 2;
+  }
+  .line5 {
+    color: #fff;
+    -webkit-animation: type .5s ;
+    -moz-animation: type .5s ;
+    -o-animation: type .5s ;
+    animation: type .5s ;
+  }
+  .cursor5 {
+    -webkit-animation: blink 1s 2s infinite;
+    -moz-animation: blink 1s 2s infinite;
+    -o-animation: blink 1s 2s infinite;
+    animation: blink 1s 2s infinite;
   }
   
-  @-webkit-keyframes blink {
-    0% {
-      opacity: 0;
+/*screen sizes 500 px and up*/
+/*a media quiery requires @ symbol then media kinda like function and takes in parameter of either 
+min width or max width, since mobile is first we do min width 500 px*/
+@media (min-width: 500px){
+    #landing-image{
+        height: 100vh;
     }
-    40% {
-      opacity: 0;
+    /*we want button to be bigger for pages 700px or >*/
+    /*we need media query again for this*/
+    /*screen size 700px and up*/
+    @media(min-width: 700px){
+        /*take button class to add extra padding*/
+        .btn{
+            padding: 1rem 3rem;
+        }
     }
-    50% {
-      opacity: 1;
-    }
-    90% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-  
-  @-moz-keyframes blink {
-    0% {
-      opacity: 0;
-    }
-    40% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    90% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-  
-  @-o-keyframes blink {
-    0% {
-      opacity: 0;
-    }
-    40% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    90% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-  
-  @keyframes blink {
-    0% {
-      opacity: 0;
-    }
-    40% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    90% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-  
-  @-webkit-keyframes type {
-    to {
-      width: 17em;
-    }
-  }
-  
-  @-moz-keyframes type {
-    to {
-      width: 17em;
-    }
-  }
-  
-  @-o-keyframes type {
-    to {
-      width: 17em;
-    }
-  }
-  
-  @keyframes type {
-    to {
-      width: 17em;
-    }
-  }
+}
