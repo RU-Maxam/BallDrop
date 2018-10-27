@@ -1,4 +1,4 @@
-
+//worked on by Adam Chang and Matthew Lee as of 10.27.18 3:17pm
 //references canvas in html file
 var canvas = document.querySelector('canvas');
 canvas.width = window.innerWidth;
