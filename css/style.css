@@ -94,7 +94,14 @@ footer{
     margin: auto;
     text-align: center;
 }
+#myCanvas{
+    width=75%;
+    height: 400px;
+    margin: auto;
+    border-style: none;
 
+
+}
 /*from source code*/
   .fakeButtons {
     height: .625rem;
