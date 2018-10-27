@@ -7,12 +7,22 @@
  to animate we want to use jquery and snip it into the body
  animate will take in the object and we want it to scroll in to the top
  */ 
-$('#view-work').on('click', function() {
-    const images = $('#images').position().top;
+$('#letsPlay').on('click', function() {
+    const images1 = $('#GameWindow').position().top;
   
     $('html, body').animate(
       {
-        scrollTop: images
+        scrollTop: images1
+      },
+      900
+    );
+  });
+  $('#viewRules').on('click', function() {
+    const images2 = $('#GameRules').position().top;
+  
+    $('html, body').animate(
+      {
+        scrollTop: images2
       },
       900
     );
