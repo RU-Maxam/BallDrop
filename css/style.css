@@ -5,7 +5,7 @@ body{
     */
     font-family: 'Roboto Condensed', sans-serif;
     margin: 0;
-    background: #eee;
+    background: #f5f5f5;
     height: auto;
 }
 .landing-image{
@@ -14,7 +14,7 @@ body{
     picture's id code found in the associated url
     */
     background-image: url("color.jpg");
-    opacity: .9;
+    opacity: .7;
     background-position: center;
     background-size: cover; /*want to cover left to right*/
     background-repeat: no-repeat;
@@ -24,17 +24,48 @@ body{
     /**/
 
 }
+.btn {
+    padding: 0.5rem 2rem; /*top bot val and left right val*/
+   
+    display: inline-block;/*to avoid overlapping use this but still 
+    a lil tight so lets add more space with margin below*/
+    margin: 2rem 0 0;/*for top morgin*/
+    border-radius: 750px;/*want border rounded*/
+    border-style: none;
+    text-decoration: none;/*take away ugly underline on hyperlink*/
+    color: #f5f5f5; /*change link color to almost black*/
+    transition: background 800ms ease; /*add transition to background where it slowly turns to that color*/
+    background: #333;
+}
+#topSection{
+    text-align: center;
+}
 #topSection h1{
-    color: #fff;
+    color: #f5f5f5;
     font-weight: 400;
     font-size: 2.5rem;
     text-transform: uppercase;
     margin: 0;
 }
 #topSection h2{
-    color: #fff;
+    color: #f5f5f5;
     font-weight: 200;
     font-size: 1rem;
     text-transform: uppercase;
     margin: 0;
+}
+#botSection{
+
+}
+#headerRules h1{
+    padding: 1.5rem;
+}
+#headerTitle h1{
+    text-align: center;
+}
+footer{
+    text-align: center;
+    padding: 2rem 1rem;
+    margin: auto;
+    color: #333;
 }
