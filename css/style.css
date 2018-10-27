@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+body{
+    /*
+    For entire body related tokens: sets font family, take away margin, change bckgrnd color, auto height
+    */
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    background: #eee;
+    height: auto;
+}
+.landing-image{
+    /*pull unsplash for static img: to use an img off unsplash simply use:
+    https://source.unsplash.com/WLUHO9A_xik but after .com/ input the actual 
+    picture's id code found in the associated url
+    */
+    background-image: url("color.jpg");
+    opacity: .9;
+    background-position: center;
+    background-size: cover; /*want to cover left to right*/
+    background-repeat: no-repeat;
+    height: 50vh;
+    flex: 0 1 60vw;
+    margin: 0;
+    /**/
+
+}
+#topSection h1{
+    color: #fff;
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+#topSection h2{
+    color: #fff;
+    font-weight: 200;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin: 0;
+}
