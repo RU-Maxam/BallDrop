@@ -6,7 +6,8 @@ canvas.height = window.innerHeight;
 //canvas.width = 700;
 //canvas.height = 700;
 
-// testig git hub
+// testig git hubsadfasdfasdf
+// helloo
 //context variable
 var c = canvas.getContext('2d');
 c.beginPath();
