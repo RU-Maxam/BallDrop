@@ -8,6 +8,7 @@ canvas.height = window.innerHeight;
 
 // testig git hubsadfasdfasdf
 // helloo
+// hi
 //context variable
 var c = canvas.getContext('2d');
 c.beginPath();
